@@ -71,7 +71,7 @@ async def clone(cloner):
     await cloner.client(
         UploadProfilePhotoRequest(file=await cloner.client.upload_file(PHOTO))
     )
-    await cloner.edit("`Profile is successfully cloned!`")
+    await cloner.edit("`Berhasil Clone Anak Anjeng!`")
     await asyncio.sleep(3)
     await cloner.delete()
 
@@ -102,7 +102,7 @@ async def revert_(reverter):
             )
         )
         os.remove(PHOTO)
-    await reverter.edit("`Profile is successfully Reverted!`")
+    await reverter.edit("`Berhasil Kembali Lagi Anjeng!`")
     await asyncio.sleep(3)
     await reverter.delete()
 
