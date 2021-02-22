@@ -47,7 +47,7 @@ async def global_ban(event):
         return await event.edit("`Why would you gban yourself?`")
     if gban_sql.is_gbanned(user.id):
         await event.edit(
-            f"the [user](tg://user?id={user.id}) is already in gbanned list any way checking again"
+            f"the [user](tg://user?id={user.id}) bersiaplah kau jamet gua gban anjeng"
         )
     else:
         gban_sql.catgban(user.id, reason)
@@ -68,7 +68,7 @@ async def global_ban(event):
             "`You need to be at least admin in 1 group to gban someone!`"
         )
     await event.edit(
-        f"Initiating Global Ban to [{user.first_name}](tg://user?id={user.id}) in `{len(groups_admin)}` groups"
+        f"Muehehehe Lenyap Jamet [{user.first_name}](tg://user?id={user.id}) Di `{len(groups_admin)}` Grup"
     )
     for i in range(len(groups_admin)):
         try:
@@ -93,11 +93,11 @@ async def global_ban(event):
     time_taken = (datetime.now() - start).seconds
     if reason:
         await event.edit(
-            f"[{user.first_name}](tg://user?id={user.id}) was gbanned in `{count}` groups in `{time_taken}` seconds!\nReason: `{reason}`"
+            f"[{user.first_name}](tg://user?id={user.id}) Lenyap di `{count}` Grup dalam waktu `{time_taken}` seconds!\nReason: `{reason}`"
         )
     else:
         await event.edit(
-            f"[{user.first_name}](tg://user?id={user.id}) was gbanned in `{count}` groups in `{time_taken}` seconds!"
+            f"[{user.first_name}](tg://user?id={user.id}) Lenyap di `{count}` Grup dalam waktu `{time_taken}` seconds!"
         )
 
     if BOTLOG and count != 0:
@@ -141,7 +141,7 @@ async def unglobal_ban(event):
             "`You need to be at least admin in 1 group to gban someone!`"
         )
     await event.edit(
-        f"initiating ungban of the [{user.first_name}](tg://user?id={user.id}) in `{len(groups_admin)}` groups"
+        f"Gua maafkan kau jamet[{user.first_name}](tg://user?id={user.id}) di `{len(groups_admin)}` grup"
     )
     for i in range(len(groups_admin)):
         try:
@@ -158,11 +158,11 @@ async def unglobal_ban(event):
     time_taken = (datetime.now() - start).seconds
     if reason:
         await event.edit(
-            f"[{user.first_name}](tg://user?id={user.id}) was ungbanned in `{count}` groups in `{time_taken}` seconds!\nReason: `{reason}`"
+            f"[{user.first_name}](tg://user?id={user.id}) memaafkan jamet di `{count}` grup dalam waktu `{time_taken}` seconds!\nReason: `{reason}`"
         )
     else:
         await event.edit(
-            f"[{user.first_name}](tg://user?id={user.id}) was ungbanned in `{count}` groups in `{time_taken}` seconds!"
+            f"[{user.first_name}](tg://user?id={user.id}) memaafkan jamet dj `{count}` grup dalam waktu `{time_taken}` seconds!"
         )
 
     if BOTLOG and count != 0:
