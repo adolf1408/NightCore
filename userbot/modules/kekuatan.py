@@ -8,7 +8,7 @@ from userbot.events import register
 
 @register(outgoing=True, pattern=r"^.kekuatan(:? |$)([1-8])?")
 async def _(fry):
-    await fry.edit("`saya Mengaktifkan Kekuatan Telegram...👾`")
+    await fry.edit("`saya Akan Memperburuk Muka Kau Yang Sudah Buruk...👾`")
     level = fry.pattern_match.group(2)
     if fry.fwd_from:
         return
@@ -66,7 +66,7 @@ async def _(fry):
 
 @register(outgoing=True, pattern=r"^.df(:? |$)([1-8])?")
 async def _(fry):
-    await fry.edit("`Sedang Dalam Proses......`")
+    await fry.edit("`Sabar Jelek......`")
     level = fry.pattern_match.group(2)
     if fry.fwd_from:
         return
