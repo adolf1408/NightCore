@@ -102,7 +102,7 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
-        "`Dadah Semuanya...`          \n　　　　　|"
+        "`Depresi anjeng...`          \n　　　　　|"
         "\n　　　　　| \n"
         "　　　　　| \n"
         "　　　　　| \n"
@@ -259,7 +259,7 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
         "┈┈┏━╮╭━┓┈╭━━━━╮\n"
-        "┈┈┃┏┗┛┓┃╭┫Fkyu ┃\n"
+        "┈┈┃┏┗┛┓┃╭┫Ngok ┃\n"
         "┈┈╰┓▋▋┏╯╯╰━━━━╯\n"
         "┈╭━┻╮╲┗━━━━╮╭╮┈\n"
         "┈┃▎▎┃╲╲╲╲╲╲┣━╯┈\n"
