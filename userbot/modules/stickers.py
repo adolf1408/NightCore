@@ -24,15 +24,15 @@ from userbot import CMD_HELP, bot
 from userbot.events import register
 
 KANGING_STR = [
-    "Eh... Koq bagus... aku curry ahhh :3",
-    "Aku curry ya kakak :)",
-    "Curry Sticker dulu yee kan",
+    "Eh... Mayan bagus... curry dulu xixi :3",
+    "Sticker bagus nih,Colong ah... :)",
+    "Anjeng Bagus... Colong Lah",
     "ehh, mantep nih.....aku ambil ya kaka",
     "Bagus eaaaa....\nAmbil ahh....",
-    "Ini Sticker aku ambil yaa\nDUARR!",
+    "Ini Sticker punya aku sekarang\nDUARR!",
     "leh ugha ni Sticker\nCurry ahh~",
     "Pim Pim Pom!!!\nni Sticker punya aing sekarang hehe",
-    "Bentar boss, ane curry dulu",
+    "Bentar babu, ane curry dulu",
     "Ihh, bagus nih\nCurry ahh~",
     "Curry lagi yee kan.....",
     "CURRY TROSS!!!",
