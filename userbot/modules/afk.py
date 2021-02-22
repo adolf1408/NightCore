@@ -207,11 +207,11 @@ async def set_afk(afk_e):
     afk_start = start1.replace(microsecond=0)
     if string:
         AFKREASON = string
-        await afk_e.edit("**Bye Kintil Lu Semua!**" f"\nReason: `{string}`")
+        await afk_e.edit("**Gua Off Anjeng, Bye!**" f"\nReason: `{string}`")
     else:
-        await afk_e.edit("**Bye Kintil Lu Semua!**")
+        await afk_e.edit("**Gua Off Anjeng, Bye!**")
     if BOTLOG:
-        await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\nGua Afk Dulu Mang!")
+        await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\nGua Off Dulu Anjeng!")
     ISAFK = True
     afk_time = datetime.now()
     raise StopPropagation
@@ -231,7 +231,7 @@ async def type_afk_is_not_true(notafk):
     afk_end = not_afk.replace(microsecond=0)
     if ISAFK:
         ISAFK = False
-        msg = await notafk.edit("**Assamulaikum Sih ganteng Mau Lewat!**")
+        msg = await notafk.edit("**Gua Datang, Kangen Ga Asu?!**")
         await asyncio.sleep(3)
         await msg.delete()
         if BOTLOG:
