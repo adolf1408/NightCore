@@ -22,14 +22,14 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
-        "`HALLO ASW AKU ADALAH BOT, DAN AKU AKAN SELALU MEMBANTU MU UNTUK BERSENANG-SENANG DI DUNIA TELEGRAM`"
+        "`HALLO TOLOL AKU ADALAH BOT, DAN AKU AKAN SELALU MEMBANTU NOLEP SEPERTIMU SUPAYA GA GABUT`"
     )
     sleep(2)
     await typew.edit(
         "`\n█████████`"
         "`\n█▄█████▄█`"
         "`\n█▼▼▼▼▼`"
-        "`\n█    WOAAARGHH AASSWW`"
+        "`\n█    HAHHHH TOLOL...`"
         "`\n█▲▲▲▲▲`"
         "`\n█████████`"
         "`\n ██   ██`"
@@ -38,7 +38,7 @@ async def typewriter(typew):
     await typew.edit(
         "`\n┈┈┈╭━━━━━╮┈┈┈┈┈\n┈┈┈┃┊┊┊┊┊┃┈┈┈┈┈`"
         "`\n┈┈┈┃┊┊╭━╮┻╮┈┈┈┈\n┈┈┈╱╲┊┃▋┃▋┃┈┈┈┈\n┈┈╭┻┊┊╰━┻━╮┈┈┈┈`"
-        "`\n┈┈╰┳┊╭━━━┳╯┈┈┈┈\n┈┈┈┃┊┃╰━━┫┈Yo Bro`"
+        "`\n┈┈╰┳┊╭━━━┳╯┈┈┈┈\n┈┈┈┃┊┃╰━━┫┈Halo Bro`"
         "\n┈┈┈┈┈┈┏━┓┈┈┈┈┈┈"
     )
     sleep(1)
@@ -70,7 +70,7 @@ async def typewriter(typew):
         "`\n█████████`"
         "`\n█▄█████▄█`"
         "`\n█▼▼▼▼▼`"
-        "`\n█    WOAAARGHHHH`"
+        "`\n█    KONTOL...`"
         "`\n█▲▲▲▲▲`"
         "`\n█████████`"
         "`\n ██   ██`"
@@ -99,7 +99,7 @@ async def typewriter(typew):
         "`\n┻┳|￣  )`"
         "`\n┳ﾐ(￣ ／`"
         "`\n┻┳T￣|`"
-        "\n**Punten**"
+        "\n**PE FOR PUNTEN**"
     )
 
 
@@ -114,7 +114,7 @@ async def typewriter(typew):
         "`\n┻┳|￣  )`"
         "`\n┳ﾐ(￣ ／`"
         "`\n┻┳T￣|`"
-        "\n**Masih Ku Pantau**"
+        "\n**Nyimak Para Senior**"
     )
 
 
