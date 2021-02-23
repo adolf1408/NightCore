@@ -26,17 +26,17 @@ async def clone(cloner):
         input_ = cloner.pattern_match.group(1)
 
     if not input_:
-        await cloner.edit("`Please reply to user or input username`")
+        await cloner.edit("`Reply atau masukin Username Tolol`")
         await asyncio.sleep(5)
         await cloner.delete()
         return
 
-    await cloner.edit("`Cloning...`")
+    await cloner.edit("`Berubah...`")
 
     try:
         user = await cloner.client(GetFullUserRequest(input_))
     except ValueError:
-        await cloner.edit("`Invalid username!`")
+        await cloner.edit("`Username Salah!`")
         await asyncio.sleep(2)
         await cloner.delete()
         return
@@ -71,7 +71,7 @@ async def clone(cloner):
     await cloner.client(
         UploadProfilePhotoRequest(file=await cloner.client.upload_file(PHOTO))
     )
-    await cloner.edit("`Berhasil Clone Anak Anjeng!`")
+    await cloner.edit("`Berhasil Berubah Jadi Si Jelek!`")
     await asyncio.sleep(3)
     await cloner.delete()
 
@@ -102,7 +102,7 @@ async def revert_(reverter):
             )
         )
         os.remove(PHOTO)
-    await reverter.edit("`Berhasil Kembali Lagi Anjeng!`")
+    await reverter.edit("`Berhasil Kembali Cakep!`")
     await asyncio.sleep(3)
     await reverter.delete()
 
