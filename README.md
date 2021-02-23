@@ -1,4 +1,5 @@
 # NightCore Userbot
+MOHON MAAF INI REPO CLONE BUAT GUA BELAJAR YA ANJENG JADI MASIH BANYAK KURANGNYA!!!
 
 <p align="center">
     <a href="https://app.codacy.com/gh/IrhamFadzillah/NightCore/dashboard"> <img src="https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=blue&logo=codacy&style=flat-square" alt="Codacy" /></a><br>
@@ -32,7 +33,7 @@ A modular Telegram Userbot running on Python3 with sqlalchemy database.
 based on [ProjectBish](https://github.com/adekmaulana/ProjectBish) Userbot
  
  ## Host
-Click this button below to Deploy to Heroku
+TEKAN TOMBOL DIBAWAH BUAT DEPLOY KE HEROKU ANJENG!!!
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/IrhamFadzillah/NightCore/tree/master"> <img src="https://www.herokucdn.com/deploy/button.png" alt="Deploy to Heroku"/></a></p>
 
 ## Credits
