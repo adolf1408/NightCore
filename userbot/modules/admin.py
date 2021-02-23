@@ -296,7 +296,7 @@ async def nothanos(unbon):
 
     try:
         await unbon.client(EditBannedRequest(unbon.chat_id, user.id, UNBAN_RIGHTS))
-        await unbon.edit("```Jamet Dimaafkan```")
+        await unbon.edit("```Jamet Anjeng Dimaafkan```")
 
         if BOTLOG:
             await unbon.client.send_message(
@@ -403,7 +403,7 @@ async def unmoot(unmot):
 
         try:
             await unmot.client(EditBannedRequest(unmot.chat_id, user.id, UNBAN_RIGHTS))
-            await unmot.edit("```Jamet Dimaafkan```")
+            await unmot.edit("```Jamet Anjeng Dimaafkan```")
         except UserIdInvalidError:
             return await unmot.edit("`Uh oh my unmute logic broke!`")
         except UserAdminInvalidError:
@@ -484,13 +484,13 @@ async def ungmoot(un_gmute):
         return
 
     # If pass, inform and start ungmuting
-    await un_gmute.edit("```Ungmuting...```")
+    await un_gmute.edit("```Sabar Anjeng...```")
 
     if ungmute(user.id) is False:
         await un_gmute.edit("`Error! User probably not gmuted.`")
     else:
         # Inform about success
-        await un_gmute.edit("```Ungmuted Successfully```")
+        await un_gmute.edit("```Jamet Anjeng Dimaafkan```")
         await sleep(3)
         await un_gmute.delete()
 
@@ -533,9 +533,9 @@ async def gspider(gspdr):
         await gspdr.edit("`Error! Jamet Sudah Diem Anjeng.\nRe-rolls the tape.`")
     else:
         if reason:
-            await gspdr.edit(f"`Jamet Kontsol!`\nReason: {reason}")
+            await gspdr.edit(f"`Diem Jamet Kontsol!`\nReason: {reason}")
         else:
-            await gspdr.edit("`Jamet Kontsol!`")
+            await gspdr.edit("`Diem Jamet Kontsol!`")
 
         if BOTLOG:
             await gspdr.client.send_message(
@@ -634,7 +634,7 @@ async def get_admin(show):
     """ For .admins command, list all of the admins of the chat. """
     info = await show.client.get_entity(show.chat_id)
     title = info.title if info.title else "this chat"
-    mentions = f"<b>Bocah Gabut Di {title}:</b> \n"
+    mentions = f"<b>Anak Anjeng Di {title}:</b> \n"
     try:
         async for user in show.client.iter_participants(
             show.chat_id, filter=ChannelParticipantsAdmins
@@ -718,10 +718,10 @@ async def kick(usr):
 
     if reason:
         await usr.edit(
-            f"`Tendang` [{user.first_name}](tg://user?id={user.id})`!`\nReason: {reason}"
+            f"`Pergi Sono Tolol` [{user.first_name}](tg://user?id={user.id})`!`\nReason: {reason}"
         )
     else:
-        await usr.edit(f"`Tendang` [{user.first_name}](tg://user?id={user.id})`!`")
+        await usr.edit(f"`Pergi Sono Tolol` [{user.first_name}](tg://user?id={user.id})`!`")
 
     if BOTLOG:
         await usr.client.send_message(
