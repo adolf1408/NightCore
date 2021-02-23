@@ -38,7 +38,7 @@ UNBAN_RIGHTS = ChatBannedRights(
 async def global_ban(event):
     if event.fwd_from:
         return
-    await event.edit("`Initiate Global Ban...`")
+    await event.edit("`Sabar Jamet...`")
     start = datetime.now()
     user, reason = await get_user_from_event(event)
     if not user:
@@ -47,7 +47,7 @@ async def global_ban(event):
         return await event.edit("`Why would you gban yourself?`")
     if gban_sql.is_gbanned(user.id):
         await event.edit(
-            f"the [user](tg://user?id={user.id}) is already in gbanned list any way checking again"
+            f"Jamet [user](tg://user?id={user.id}) kena gbanned anjeng..."
         )
     else:
         gban_sql.catgban(user.id, reason)
@@ -65,7 +65,7 @@ async def global_ban(event):
 
     if len(groups_admin) == 0:
         return await event.edit(
-            "`You need to be at least admin in 1 group to gban someone!`"
+            "`Goblok Lu Bukan Admin Grup Dimanapun!`"
         )
     await event.edit(
         f"Initiating Global Ban to [{user.first_name}](tg://user?id={user.id}) in `{len(groups_admin)}` groups"
@@ -97,7 +97,7 @@ async def global_ban(event):
         )
     else:
         await event.edit(
-            f"[{user.first_name}](tg://user?id={user.id}) was gbanned in `{count}` groups in `{time_taken}` seconds!"
+            f"[{user.first_name}](tg://user?id={user.id}) Mamposs Kena Gban di `{count}` grup `{time_taken}` seconds!"
         )
 
     if BOTLOG and count != 0:
@@ -112,7 +112,7 @@ async def global_ban(event):
 async def unglobal_ban(event):
     if event.fwd_from:
         return
-    await event.edit("ungbaning.....")
+    await event.edit("memaafkan jamet.....")
     start = datetime.now()
     user, reason = await get_user_from_event(event)
     if not user:
@@ -121,7 +121,7 @@ async def unglobal_ban(event):
         gban_sql.catungban(user.id)
     else:
         await event.edit(
-            f"the [user](tg://user?id={user.id}) is not in your gbanned list"
+            f"jamet [user](tg://user?id={user.id}) tidak ada di list Gban Tolol"
         )
         return
 
@@ -141,7 +141,7 @@ async def unglobal_ban(event):
             "`You need to be at least admin in 1 group to gban someone!`"
         )
     await event.edit(
-        f"initiating ungban of the [{user.first_name}](tg://user?id={user.id}) in `{len(groups_admin)}` groups"
+        f"memaafkan anak anjeng [{user.first_name}](tg://user?id={user.id}) di `{len(groups_admin)}` grup"
     )
     for i in range(len(groups_admin)):
         try:
