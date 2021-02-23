@@ -399,7 +399,7 @@ async def _(event):
 @register(outgoing=True, pattern=r"^\.kickme$")
 async def kickme(leave):
     """ Basically it's .kickme command """
-    await leave.edit("Keluar Gua Anjeng, Gc Gua Banyak")
+    await leave.edit("Kalian Semua Tolol, Keluar Gua Anjeng!")
     await leave.client.kick_participant(leave.chat_id, "me")
 
 
