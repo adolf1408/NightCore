@@ -46,9 +46,7 @@ async def global_ban(event):
     if user.id == (await event.client.get_me()).id:
         return await event.edit("`Why would you gban yourself?`")
     if gban_sql.is_gbanned(user.id):
-        await event.edit(
-            f"Jamet [user](tg://user?id={user.id}) kena gbanned anjeng..."
-        )
+        await event.edit(f"Jamet [user](tg://user?id={user.id}) kena gbanned anjeng...")
     else:
         gban_sql.catgban(user.id, reason)
 
@@ -64,9 +62,7 @@ async def global_ban(event):
             groups_admin.append(dialog.id)
 
     if len(groups_admin) == 0:
-        return await event.edit(
-            "`Goblok Lu Bukan Admin Grup Dimanapun!`"
-        )
+        return await event.edit("`Goblok Lu Bukan Admin Grup Dimanapun!`")
     await event.edit(
         f"Initiating Global Ban to [{user.first_name}](tg://user?id={user.id}) in `{len(groups_admin)}` groups"
     )
