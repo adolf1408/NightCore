@@ -68,7 +68,9 @@ async def global_ban(event):
             "`You need to be at least admin in 1 group to gban someone!`"
         )
     await event.edit(
-        f"Muehehehe Lenyap Jamet [{user.first_name}](tg://user?id={user.id}) Di `{len(groups_admin)}` Grup"
+        f"😵Global Banned By:ADOLF😵"
+        "Nama Jamet :[{user.first_name}](tg://user?id={user.id}) 
+        "Jumlah Grup: `{len(groups_admin)}` Grup"
     )
     for i in range(len(groups_admin)):
         try:
