@@ -69,7 +69,7 @@ async def global_ban(event):
         )
     await event.edit(
         f"!Global Banned! Nama Jamet [{user.first_name}](tg://user?id={user.id}) Jumlah Grup `{len(groups_admin)}` Grup"
-    )
+        )
     for i in range(len(groups_admin)):
         try:
             await event.client(
