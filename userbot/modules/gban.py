@@ -46,7 +46,9 @@ async def global_ban(event):
     if user.id == (await event.client.get_me()).id:
         return await event.edit("`Why would you gban yourself?`")
     if gban_sql.is_gbanned(user.id):
-        await event.edit(f"Bangsat [user](tg://user?id={user.id}) kena gbanned telasoo...")
+        await event.edit(
+            f"Bangsat [user](tg://user?id={user.id}) kena gbanned telasoo..."
+        )
     else:
         gban_sql.catgban(user.id, reason)
 
