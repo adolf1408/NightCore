@@ -38,7 +38,7 @@ UNBAN_RIGHTS = ChatBannedRights(
 async def global_ban(event):
     if event.fwd_from:
         return
-    await event.edit("`Sabar Jamet...`")
+    await event.edit("`yahaha keban`")
     start = datetime.now()
     user, reason = await get_user_from_event(event)
     if not user:
@@ -46,7 +46,7 @@ async def global_ban(event):
     if user.id == (await event.client.get_me()).id:
         return await event.edit("`Why would you gban yourself?`")
     if gban_sql.is_gbanned(user.id):
-        await event.edit(f"Jamet [user](tg://user?id={user.id}) kena gbanned anjeng...")
+        await event.edit(f"Bangsat [user](tg://user?id={user.id}) kena gbanned telasoo...")
     else:
         gban_sql.catgban(user.id, reason)
 
@@ -62,7 +62,7 @@ async def global_ban(event):
             groups_admin.append(dialog.id)
 
     if len(groups_admin) == 0:
-        return await event.edit("`Goblok Lu Bukan Admin Grup Dimanapun!`")
+        return await event.edit("`Aing bukan admin!`")
     await event.edit(
         f"Initiating Global Ban to [{user.first_name}](tg://user?id={user.id}) in `{len(groups_admin)}` groups"
     )
@@ -108,7 +108,7 @@ async def global_ban(event):
 async def unglobal_ban(event):
     if event.fwd_from:
         return
-    await event.edit("memaafkan jamet.....")
+    await event.edit("memaafkan telaso.....")
     start = datetime.now()
     user, reason = await get_user_from_event(event)
     if not user:
@@ -117,7 +117,7 @@ async def unglobal_ban(event):
         gban_sql.catungban(user.id)
     else:
         await event.edit(
-            f"jamet [user](tg://user?id={user.id}) tidak ada di list Gban Tolol"
+            f"jamet [user](tg://user?id={user.id}) tidak ada di list Gban orangTolol"
         )
         return
 
@@ -137,7 +137,7 @@ async def unglobal_ban(event):
             "`You need to be at least admin in 1 group to gban someone!`"
         )
     await event.edit(
-        f"memaafkan anak anjeng [{user.first_name}](tg://user?id={user.id}) di `{len(groups_admin)}` grup"
+        f"memaafkan anak telaso [{user.first_name}](tg://user?id={user.id}) di `{len(groups_admin)}` grup"
     )
     for i in range(len(groups_admin)):
         try:
